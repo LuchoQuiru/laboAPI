@@ -5,10 +5,10 @@ const checkJwt = require('../middleware/auth0.js')
 
 
 //GET
-router.get('/practicas', (req, res) => callback(res));
+router.get('/pruebas'/*, checkJwt*/, (req, res) => callback(res));
 
 function callback(res) {
-    client.query(('select * from practicas'), (query_error, query_response) => {
+    client.query(('select * from pruebas'), (query_error, query_response) => {
         res.json(query_response.rows)
     });
 }

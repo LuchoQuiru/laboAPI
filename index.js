@@ -8,6 +8,7 @@ const path = require('path')
 app.use(express.json()) 
 
 //Agrego las rutas a la app
+app.use(require('./routes/pruebas.js'));
 app.use(require('./routes/practicas.js'));
 
 //Seteo el puerto 
